@@ -10,6 +10,10 @@ contract Lock {
 
     event Withdrawal(uint256 amount, uint256 when);
 
+        
+    receive() external payable {
+    }
+
     constructor(uint256 unlockTime_) payable {
         require(block.timestamp < unlockTime_, "Wrong Unlock time");
 
