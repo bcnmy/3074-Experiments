@@ -35,6 +35,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/foundry/lcov.info
           flags: foundry
+      
       - name: Upload Hardhat Coverage Report to Codecov
         uses: codecov/codecov-action@v3
         with:

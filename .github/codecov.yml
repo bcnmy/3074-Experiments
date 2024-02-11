@@ -1,0 +1,32 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  status:
+    # Disable project and patch statuses globally
+    project: off
+    patch: off
+    # Define custom statuses for individual flags
+    foundry:
+      target: 70%  # Example target, adjust as needed
+      threshold: 1%
+      flags: foundry
+    hardhat:
+      target: 70%  # Example target, adjust as needed
+      threshold: 1%
+      flags: hardhat
+
+flags:
+  foundry:
+    paths:
+      - "coverage/foundry/"
+    carryforward: true
+  hardhat:
+    paths:
+      - "coverage/hardhat/"
+    carryforward: true
+
+comment:
+  layout: "header, diff, flags"
+  behavior: default
+  require_changes: no
