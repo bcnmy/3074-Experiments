@@ -3,18 +3,8 @@ codecov:
 
 coverage:
   status:
-    # Disable project and patch statuses globally
     project: off
     patch: off
-    # Define custom statuses for individual flags
-    foundry:
-      target: 70%  # Example target, adjust as needed
-      threshold: 1%
-      flags: foundry
-    hardhat:
-      target: 70%  # Example target, adjust as needed
-      threshold: 1%
-      flags: hardhat
 
 flags:
   foundry:
@@ -23,7 +13,7 @@ flags:
     carryforward: true
   hardhat:
     paths:
-      - "coverage/hardhat/"
+      - "coverage/"
     carryforward: true
 
 comment:
