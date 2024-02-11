@@ -34,7 +34,7 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage/hardhat/lcov.info
+          file: ./coverage/lcov.info
           flags: hardhat
           name: codecov-hardhat-report
           
@@ -45,3 +45,6 @@ jobs:
           file: ./coverage/foundry/lcov.info
           flags: foundry
           name: codecov-foundry-report
+
+
+          
