@@ -7,6 +7,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      
       - name: Install JavaScript Dependencies
         run: yarn install --frozen-lockfile
       
@@ -19,32 +24,14 @@ jobs:
         run: forge install
       
       - name: Generate Hardhat Coverage Report
-        run: npx hardhat coverage
-      
-      - name: Generate Foundry Coverage Report
-        run: forge coverage --report lcov
-      
-      - name: Install lcov for genhtml
-        run: sudo apt-get install -y lcov
-      
-      - name: Generate HTML Report from LCOV (Foundry Coverage)
-        run: genhtml lcov.info --branch-coverage --output-dir coverage/foundry
+        run: yarn coverage
       
       - name: Upload Hardhat Coverage Report to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage/lcov.info
-          flags: hardhat
-          name: codecov-hardhat-report
+        run: yarn codecov -t ${{ secrets.CODECOV_TOKEN }} -f coverage/hardhat/lcov.info -F hardhat
           
       - name: Upload Foundry Coverage Report to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage/foundry/lcov.info
-          flags: foundry
-          name: codecov-foundry-report
+        run: yarn codecov -t ${{ secrets.CODECOV_TOKEN }} -f coverage/foundry/lcov.info -F foundry
+
 
 
           
