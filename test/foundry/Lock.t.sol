@@ -4,18 +4,16 @@ pragma solidity >=0.8.23 <0.9.0;
 import { PRBTest } from "@prb/test/src/PRBTest.sol";
 import { Lock } from "../../contracts/Lock.sol";
 
-
-
 contract LockTest is PRBTest {
     Lock public lock;
     address payable public owner;
 
-    receive() external payable {}
+    receive() external payable { }
 
     function setUp() public {
         owner = payable(address(this));
         uint256 unlockTime = block.timestamp + 1 days; // Set unlock time to 1 day from now
-        lock = new Lock{ value: 1 ether}(unlockTime);
+        lock = new Lock{ value: 1 ether }(unlockTime);
     }
 
     function testInitialOwner() public {

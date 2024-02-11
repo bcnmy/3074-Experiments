@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.23;
+pragma solidity ^0.8.24;
 
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
@@ -10,16 +10,14 @@ contract Lock {
 
     event Withdrawal(uint256 amount, uint256 when);
 
-        
-    receive() external payable {
-    }
-
     constructor(uint256 unlockTime_) payable {
         require(block.timestamp < unlockTime_, "Wrong Unlock time");
 
         unlockTime = unlockTime_;
         owner = payable(msg.sender);
     }
+
+    receive() external payable { }
 
     function withdraw() public {
         // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
