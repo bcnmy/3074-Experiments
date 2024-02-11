@@ -57,7 +57,7 @@
     "test:forge": "forge test",
     "test:hardhat": "yarn hardhat test",
     "test": "yarn run test:hardhat && yarn run test:forge",
-    "coverage:forge": "forge coverage --report lcov && lcov --remove lcov.info 'scripts/*' -o lcov.info && genhtml lcov.info --branch-coverage --output-dir coverage/foundry && mv lcov.info coverage/foundry/",
+    "coverage:forge": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage/foundry && mv lcov.info coverage/foundry/",
     "coverage:hardhat": "yarn hardhat coverage",
     "coverage": "yarn run coverage:forge && yarn run coverage:hardhat",
     "deploy:hardhat": "yarn hardhat run --network localhost scripts/typescript/deploy.ts",
