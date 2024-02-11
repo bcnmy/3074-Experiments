@@ -3,8 +3,8 @@
 This repository serves as a comprehensive foundation for smart contract projects, streamlining the development process with a focus on best practices, security, and efficiency.
 
 [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg)](https://hardhat.org/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFBD10.svg)](https://getfoundry.sh/)
+
 ![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage) ![Codecov Project Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&label=Project-coverage)
-[![License](https://img.shields.io/github/license/bcnmy/sc-template)](./LICENSE)
 
 ## Features
 
