@@ -56,7 +56,7 @@
     "test:forge": "forge test",
     "test:hardhat": "yarn hardhat test",
     "test": "yarn run test:hardhat && yarn run test:forge",
-    "coverage:forge": "forge coverage",
+    "coverage:forge": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage/foundry",
     "coverage:hardhat": "yarn hardhat coverage",
     "coverage": "yarn run coverage:forge && yarn run coverage:hardhat",
     "coverage:report": "yarn forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage",
