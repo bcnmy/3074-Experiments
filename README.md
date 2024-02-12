@@ -1,14 +1,13 @@
+![Biconomy](https://img.shields.io/badge/Made_with_%F0%9F%8D%8A_by-Biconomy-ff4e17?style=flat) ![License MIT](https://img.shields.io/badge/License-MIT-blue?&style=flat) [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg)](https://hardhat.org/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFBD10.svg)](https://getfoundry.sh/) 
+![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage&logo=codecov) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage&logo=codecov)
 # Smart Contract Template Base 🚀
 
 This repository serves as a comprehensive foundation for smart contract projects, streamlining the development process with a focus on best practices, security, and efficiency.
 
-[![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg)](https://hardhat.org/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFBD10.svg)](https://getfoundry.sh/)
-
-![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage&logo=codecov) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage&logo=codecov)
 ## Features
 
 - **Smart Contract Template Base**: A robust foundation for future smart contract projects.
-- **Hardhat & Foundry Support**: Equipped with both Hardhat and Foundry tools, along with an adapted folder structure for seamless development.
+- **Hardhat & Foundry Support**: Equipped with both Hardhat and Foundry tools and an adapted folder structure for seamless development.
 - **Best Practices**: Adheres to industry best practices in smart contract programming to ensure code quality and security.
 - **Continuous Integration & Deployment**: Utilizes GitHub Actions for automated testing and deployment, ensuring code reliability.
 - **Strict Linting**: Implements Solhint based on the Solidity style guide, enhancing code quality and consistency.
@@ -58,13 +57,14 @@ Your contributions are welcome! Please refer to the contributing guidelines for 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/bcnmy/sc-template/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## Contact
+## Connect with Biconomy 🍊
 
-Biconomy - [@bcnmy](https://twitter.com/bcnmy)
-
-## Acknowledgements
-
-- [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) for secure contract standards.
-- Contributors and supporters who make open-source development possible.
+- 🌐 [Biconomy](https://biconomy.io)
+- 📨 [Telegram](https://t.me/biconomy)
+- 🐦 [Twitter](https://twitter.com/biconomy)
+- 💻 [GitHub](https://github.com/bcnmy/)
+- 💬 [Discord](https://discord.gg/biconomy)
+- 📈 [LinkedIn](https://www.linkedin.com/company/biconomy)
+- 📺 [YouTube](https://www.youtube.com/channel/UC0CtA-Dw9yg-ENgav_VYjRw)
