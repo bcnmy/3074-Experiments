@@ -28,17 +28,18 @@ jobs:
       
       - name: Generate Hardhat & Foundry Coverage Report
         run: yarn coverage
-      
+
+
       - name: Upload Foundry Coverage Report to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/foundry/lcov.info
           flags: foundry
-      
+
       - name: Upload Hardhat Coverage Report to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage/hardhat/lcov.info
+          file: ./coverage/lcov.info
           flags: hardhat
