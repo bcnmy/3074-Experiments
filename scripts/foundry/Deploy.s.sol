@@ -10,4 +10,8 @@ contract Deploy is BaseScript {
     function run() public broadcast returns (Foo foo) {
         foo = new Foo();
     }
+
+    function test() public pure returns (uint256) {
+        return 0;
+    }
 }
