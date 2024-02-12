@@ -4,7 +4,7 @@ This repository serves as a comprehensive foundation for smart contract projects
 
 [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg)](https://hardhat.org/) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFBD10.svg)](https://getfoundry.sh/)
 
-![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage) ![codecov](https://codecov.io/github/bcnmy/sc-template/graph/badge.svg?token=2BYDIFQ56W)
+![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage&logo=codecov) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage&logo=codecov)
 ## Features
 
 - **Smart Contract Template Base**: A robust foundation for future smart contract projects.
