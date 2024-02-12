@@ -30,8 +30,4 @@ contract Lock {
 
         owner.transfer(address(this).balance);
     }
-
-    function test() public pure returns (uint256) {
-        return 0;
-    }
 }

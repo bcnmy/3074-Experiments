@@ -27,7 +27,7 @@ jobs:
         run: forge install
       
       - name: Generate Hardhat & Foundry Coverage Report
-        run: yarn coverage
+        run: yarn coverage:report
 
 
       - name: Upload Foundry Coverage Report to Codecov
