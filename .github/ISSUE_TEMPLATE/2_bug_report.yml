@@ -2,7 +2,6 @@ name: 🐛 Bug Report & Test Failures
 description: Report unexpected behaviors or failing tests
 title: "[BUG] "
 labels: ["bug", "help wanted"]
-assignees: ""
 body:
   - type: markdown
     attributes:

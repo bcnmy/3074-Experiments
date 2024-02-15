@@ -2,7 +2,6 @@ name: ✨ Feature Requests & Performance Improvements
 description: Suggest a new feature or performance enhancement
 title: "[FEATURE] "
 labels: ["enhancement", "good first issue"]
-assignees: ""
 body:
   - type: markdown
     attributes:

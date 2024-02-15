@@ -15,6 +15,7 @@ Our goal is to maximize gas efficiency in our smart contracts while ensuring the
 Contributors to the Biconomy Smart Contract Optimization Bounty Program will be rewarded for their efforts with **BICO tokens (ERC20)**, based on the cumulative gas savings achieved across all contracts. Furthermore, in addition to the bounty rewards, successful contributors will gain a spot in our **Contributor Hall of Fame**, where names or GitHub handles are honored within our repository and documentation, showcasing the impactful contributions made to the Biconomy ecosystem.
 
 ### **Reward Tiers**
+
 - **Tier 1 (up to 10% Cumulative Gas Savings):** Receive $150 in BICO tokens for optimizing up to 10%.
 - **Tier 2 (11-25% Cumulative Gas Savings):** Earn $600 in BICO tokens for achieving 11-25% savings.
 - **Tier 3 (26-40% Cumulative Gas Savings):** Secure $2,000 in BICO tokens for 26-40% cumulative savings.

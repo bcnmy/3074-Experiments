@@ -2,7 +2,6 @@ name: 💡 General Inquiry & Suggestions
 description: Share general questions or suggestions that don't fit other categories
 title: "[GENERAL] "
 labels: ["question", "enhancement"]
-assignees: ""
 body:
   - type: markdown
     attributes:

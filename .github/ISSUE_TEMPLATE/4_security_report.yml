@@ -2,7 +2,6 @@ name: 🔒 Security Pre-Screening
 description: Pre-screening for security-related reports
 title: "[SECURITY PRE-SCREEN] "
 labels: ["security", "triage needed"]
-assignees: ""
 body:
   - type: markdown
     attributes:

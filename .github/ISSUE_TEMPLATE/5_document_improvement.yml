@@ -2,7 +2,6 @@ name: 📚 Documentation Improvement
 description: Propose improvements or report issues with documentation
 title: "[DOCS] "
 labels: ["documentation"]
-assignees: ""
 body:
   - type: markdown
     attributes:

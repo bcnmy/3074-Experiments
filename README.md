@@ -141,12 +141,12 @@ Welcome to the Champions League, a place where your contributions to Biconomy ar
 
 ### Champions Roster
 
-| 🍊 Contributor | 🛡️ Domain |
-|----------------|------------|
-| @user1 | Code Optimization |
-| @user2 | Security |
-| @user3 | Documentation |
-| ... | ... |
+| 🍊 Contributor | 🛡️ Domain         |
+| -------------- | ----------------- |
+| @user1         | Code Optimization |
+| @user2         | Security          |
+| @user3         | Documentation     |
+| ...            | ...               |
 
 ### Entering the League
 
