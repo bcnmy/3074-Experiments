@@ -8,6 +8,18 @@
 
 This repository serves as a comprehensive foundation for smart contract projects, streamlining the development process with a focus on best practices, security, and efficiency.
 
+## 📚 Table of Contents
+
+- [🚀 Introduction](#smart-contract-template-base-)
+- [🌟 Features](#features)
+- [🏁 Getting Started](#getting-started)
+- [🔧 Essential Scripts](#️-essential-scripts)
+- [🔒 Security Audits](#-security-audits)
+- [🏆 Biconomy Champions League](#-biconomy-champions-league-)
+- [📖 Documentation and Resources](#documentation-and-resources)
+- [📄 License](#license)
+- [🤝 Connect with Biconomy](#connect-with-biconomy-)
+
 ## Features
 
 - **Smart Contract Template Base**: A robust foundation for future smart contract projects.
