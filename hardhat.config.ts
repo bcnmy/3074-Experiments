@@ -1,5 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-storage-layout";
+import "@bonadocs/docgen";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -13,6 +15,10 @@ const config: HardhatUserConfig = {
         },
       },
     },
+  },
+  docgen: {
+    projectName: "Biconomy",
+    projectDescription: "Sc-Template Description",
   },
 };
 

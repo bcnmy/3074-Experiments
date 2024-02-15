@@ -1,0 +1,43 @@
+name: 🐛 Bug Report
+description: Report a bug found in our smart contracts
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to report a bug."
+  - type: input
+    attributes:
+      label: Bug Description
+      description: Briefly describe the bug.
+      placeholder: e.g., Function X does not return the correct value.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Please provide the steps to reproduce the issue.
+      placeholder: |
+        1. Deploy contract with...
+        2. Call function...
+        3. See error...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Function X should return...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Function X returned...
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true

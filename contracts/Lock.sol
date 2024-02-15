@@ -1,15 +1,25 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 
-// Uncomment this line to use console.log
-// import "hardhat/console.sol";
-
+/**
+ * @title Lock
+ * @dev Implements a time-locked wallet that only allows withdrawals after a certain date.
+ */
 contract Lock {
     uint256 public unlockTime;
     address payable public owner;
 
+    /**
+     * @dev Emitted when funds are withdrawn from the contract.
+     * @param amount The amount of Ether withdrawn.
+     * @param when The timestamp of the withdrawal.
+     */
     event Withdrawal(uint256 amount, uint256 when);
 
+    /**
+     * @notice Creates a locked wallet.
+     * @param unlockTime_ The timestamp after which withdrawals can be made.
+     */
     constructor(uint256 unlockTime_) payable {
         require(block.timestamp < unlockTime_, "Wrong Unlock time");
 
@@ -17,12 +27,15 @@ contract Lock {
         owner = payable(msg.sender);
     }
 
+    /**
+     * @notice Allows funds to be received via direct transfers.
+     */
     receive() external payable { }
 
+    /**
+     * @notice Withdraws all funds if the unlock time has passed and the caller is the owner.
+     */
     function withdraw() public {
-        // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
-        // console.log("Unlock time is %o and block timestamp is %o", unlockTime, block.timestamp);
-
         require(block.timestamp >= unlockTime, "You can't withdraw yet");
         require(msg.sender == owner, "You aren't the owner");
 

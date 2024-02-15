@@ -6,7 +6,7 @@ import { Lock } from "../../contracts/Lock.sol";
 
 contract LockTest is PRBTest {
     Lock public lock;
-    address payable public owner;
+    address payable owner;
 
     receive() external payable { }
 
