@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity >=0.8.23 <0.9.0;
+pragma solidity >=0.8.24 <0.9.0;
 
 import { PRBTest } from "@prb/test/src/PRBTest.sol";
 import { Lock } from "../../contracts/Lock.sol";
+import { StdCheats } from "forge-std/src/StdCheats.sol";
 
-contract LockTest is PRBTest {
+contract LockTest is PRBTest, StdCheats {
     Lock public lock;
     address payable owner;
 
@@ -32,14 +33,17 @@ contract LockTest is PRBTest {
         assertGt(finalBalance, initialBalance);
     }
 
-    function testFailWithdrawTooEarly() public {
+    function testWithdrawTooEarly() public {
         // This test is expected to fail as the withdrawal is too early
+        vm.expectRevert(bytes("You can't withdraw yet"));
         lock.withdraw();
     }
 
-    function testFailWithdrawByNonOwner() public {
+    function testWithdrawByNonOwner() public {
         // Change the sender to someone other than the owner
+        vm.warp(block.timestamp + 2 days);
         vm.prank(address(0x123));
+        vm.expectRevert(bytes("You aren't the owner"));
         lock.withdraw();
     }
 }
