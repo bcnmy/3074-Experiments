@@ -36,7 +36,7 @@ contract Lock {
      * @notice Withdraws all funds if the unlock time has passed and the caller is the owner.
      */
     function withdraw() public {
-        require(block.timestamp >= unlockTime, "You can't withdraw yet");
+        require(block.timestamp > unlockTime, "You can't withdraw yet");
         require(msg.sender == owner, "You aren't the owner");
 
         emit Withdrawal(address(this).balance, block.timestamp);
