@@ -23,7 +23,6 @@ This repository serves as a comprehensive foundation for smart contract projects
 ## Features
 
 - **Smart Contract Template Base**: A robust foundation for future smart contract projects.
-- **Hardhat & Foundry Support**: Equipped with both Hardhat and Foundry tools and an adapted folder structure for seamless development.
 - **Best Practices**: Adheres to industry best practices in smart contract programming to ensure code quality and security.
 - **Continuous Integration & Deployment**: Utilizes GitHub Actions for automated testing and deployment, ensuring code reliability.
 - **Strict Linting**: Implements Solhint based on the Solidity style guide, enhancing code quality and consistency.
@@ -40,7 +39,8 @@ To kickstart your smart contract development with this template, follow these st
 
 - Node.js (v18.x or later)
 - Yarn (or npm)
-- Foundry (Refer to [Foundry installation instructions](https://getfoundry.sh/docs/installation))
+- Rust (Refer to [Rust installation instructions](https://www.rust-lang.org/tools/install))
+- C++ Boost (Refer to [Boost installation instructions](https://www.boost.org/doc/libs/1_77_0/more/getting_started/unix-variants.html) or alternatively, install via `brew install boost` on macOS)
 
 ### Installation
 
@@ -51,24 +51,34 @@ git clone https://github.com/bcnmy/sc-template.git
 cd sc-template
 ```
 
-2. **Install dependencies:**
+2. **Install tooling-dependencies:**
+
+```bash
+git submodule update --init --recursive
+```
+
+2. **Build Forge, Anvil and Solc with 3074 Support**
+```bash
+make
+````
+
+
+3. **Install dependencies:**
 
 ```bash
 yarn install
 ```
 
-3. **Setup environment variables:**
+4. **Setup environment variables:**
 
 Copy `.env.example` to `.env` and fill in your details.
 
 ## 🛠️ Essential Scripts
 
-Execute key operations for Foundry and Hardhat with these scripts. Append `:forge` or `:hardhat` to run them in the respective environment.
-
 ### 🏗️ Build Contracts
 
 ```bash
-yarn build
+yarn build:forge
 ```
 
 Compiles contracts for both Foundry and Hardhat.
@@ -76,7 +86,7 @@ Compiles contracts for both Foundry and Hardhat.
 ### 🧪 Run Tests
 
 ```bash
-yarn test
+yarn test:forge
 ```
 
 Carries out tests to verify contract functionality.
@@ -84,7 +94,7 @@ Carries out tests to verify contract functionality.
 ### ⛽ Gas Report
 
 ```bash
-yarn test:gas
+yarn test:gas:forge
 ```
 
 Creates detailed reports for test coverage.
@@ -92,23 +102,15 @@ Creates detailed reports for test coverage.
 ### 📊 Coverage Report
 
 ```bash
-yarn coverage
+yarn coverage:forge
 ```
 
 Creates detailed reports for test coverage.
 
-### 📄 Documentation
-
-```bash
-yarn docs
-```
-
-Generate documentation from NatSpec comments.
-
 ### 🚀 Deploy Contracts
 
 ```bash
-yarn deploy
+yarn deploy:forge
 ```
 
 Deploys contracts onto the blockchain network.
@@ -128,16 +130,6 @@ yarn lint:fix
 ```
 
 Automatically fixes linting problems found.
-
-### 🚀 Generating Storage Layout
-
-```bash
-yarn check
-```
-
-To generate reports of the storage layout for potential upgrades safety using `hardhat-storage-layout`.
-
-🔄 Add `:forge` or `:hardhat` to any script above to target only Foundry or Hardhat environment, respectively.
 
 ## 🔒 Security Audits
 

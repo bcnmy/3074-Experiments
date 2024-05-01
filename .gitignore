@@ -42,3 +42,6 @@ node_modules
 
 # Foundry cache
 cache_forge/solidity-files-cache.json
+
+# Build Files
+bin
