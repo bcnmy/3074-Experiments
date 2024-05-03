@@ -3,12 +3,12 @@
 pragma solidity ^0.8.23;
 
 import { Test } from "forge-std/src/Test.sol";
-import { EntryPoint, PackedUserOperation } from "@account-abstraction/contracts/core/EntryPoint.sol";
+import { EntryPoint } from "@account-abstraction/contracts/core/EntryPoint.sol";
 import { ToArrayUtils } from "./utils/ToArrayUtils.sol";
 
 /* solhint-disable ordering*/
 
-abstract contract SATestBase is Test, ToArrayUtils {
+abstract contract BaseTest is Test, ToArrayUtils {
     // Test Accounts
     struct TestAccount {
         address payable addr;
