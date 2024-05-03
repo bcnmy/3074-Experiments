@@ -2,38 +2,20 @@
 
 ![Codecov Hardhat Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=hardhat&label=Hardhat-coverage&logo=codecov) ![Codecov Foundry Coverage](https://img.shields.io/codecov/c/gh/bcnmy/sc-template?token=2BYDIFQ56W&flag=foundry&label=Foundry-coverage&logo=codecov)
 
-# Smart Contract Template Base 🚀
+# 3074 Experiments
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bcnmy/sc-template)
 
-This repository serves as a comprehensive foundation for smart contract projects, streamlining the development process with a focus on best practices, security, and efficiency.
+Experimental Smart Contracts to combine the 3074 EIP with 4337.
 
 ## 📚 Table of Contents
 
-- [🚀 Introduction](#smart-contract-template-base-)
-- [🌟 Features](#features)
-- [🏁 Getting Started](#getting-started)
 - [🔧 Essential Scripts](#️-essential-scripts)
 - [🔒 Security Audits](#-security-audits)
 - [🏆 Biconomy Champions League](#-biconomy-champions-league-)
 - [📖 Documentation and Resources](#documentation-and-resources)
 - [📄 License](#license)
 - [🤝 Connect with Biconomy](#connect-with-biconomy-)
-
-## Features
-
-- **Smart Contract Template Base**: A robust foundation for future smart contract projects.
-- **Best Practices**: Adheres to industry best practices in smart contract programming to ensure code quality and security.
-- **Continuous Integration & Deployment**: Utilizes GitHub Actions for automated testing and deployment, ensuring code reliability.
-- **Strict Linting**: Implements Solhint based on the Solidity style guide, enhancing code quality and consistency.
-- **Comprehensive Testing**: Includes a wide range of tests (unit, fuzz, fork) for both Foundry and Hardhat environments.
-- **Environment Configuration**: Comes with `.env.example` for easy setup of API keys and environmental variables.
-- **Code Formatting**: Uses Prettier to maintain a consistent code style across the project.
-- **Configurations for Foundry & Hardhat**: Provides essential settings and scripts for building, testing, and deployment, tailored for both development environments.
-
-## Getting Started
-
-To kickstart your smart contract development with this template, follow these steps:
 
 ### Prerequisites
 
